@@ -1375,81 +1375,9 @@ an example&lt;/a&gt; inline link.&lt;/p&gt;
 title attribute.&lt;/p&gt;
 </code></pre>
 
-<p>If you're referring to a local resource on the same server, you can
-use relative paths:</p>
-
-<pre><code>See my [About](/about/) page for details.
-</code></pre>
-
-<p>Reference-style links use a second set of square brackets, inside
-which you place a label of your choosing to identify the link:</p>
-
-<pre><code>This is [an example][id] reference-style link.
-</code></pre>
-
-<p>You can optionally use a space to separate the sets of brackets:</p>
-
-<pre><code>This is [an example] [id] reference-style link.
-</code></pre>
-
-<p>Then, anywhere in the document, you define your link label like this,
-on a line by itself:</p>
-
-<pre><code>[id]: http://example.com/  "Optional Title Here"
-</code></pre>
-
-<p>That is:</p>
-
-<ul>
-<li>  Square brackets containing the link identifier (optionally
-indented from the left margin using up to three spaces);</li>
-<li>  followed by a colon;</li>
-<li>  followed by one or more spaces (or tabs);</li>
-<li>  followed by the URL for the link;</li>
-<li>  optionally followed by a title attribute for the link, enclosed
-in double or single quotes.</li>
-</ul>
-
-<p>The link URL may, optionally, be surrounded by angle brackets:</p>
-
-<pre><code>[id]: &lt;http://example.com/&gt;  "Optional Title Here"
-</code></pre>
-
-<p>You can put the title attribute on the next line and use extra spaces
-or tabs for padding, which tends to look better with longer URLs:</p>
-
-<pre><code>[id]: http://example.com/longish/path/to/resource/here
-    "Optional Title Here"
-</code></pre>
-
-<p>Link definitions are only used for creating links during Markdown
-processing, and are stripped from your document in the HTML output.</p>
-
-<p>Link definition names may constist of letters, numbers, spaces, and punctuation -- but they are <em>not</em> case sensitive. E.g. these two links:</p>
-
-<pre><code>[link text][a]
-[link text][A]
-</code></pre>
-
-<p>are equivalent.</p>
-
-<p>The <em>implicit link name</em> shortcut allows you to omit the name of the
-link, in which case the link text itself is used as the name.
-Just use an empty set of square brackets -- e.g., to link the word
-"Google" to the google.com web site, you could simply write:</p>
 
 
 
-
-<div class="highlight highlight-js"><pre><span class="pl-k">var</span> gulp <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp<span class="pl-pds">'</span></span>);
-<span class="pl-k">var</span> myth <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp-myth<span class="pl-pds">'</span></span>);
-
-gulp.task(<span class="pl-s"><span class="pl-pds">'</span>default<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> () {
-    <span class="pl-k">return</span> gulp.<span class="pl-c1">src</span>(<span class="pl-s"><span class="pl-pds">'</span>src/app.css<span class="pl-pds">'</span></span>)
-        .pipe(myth())
-        .pipe(gulp.dest(<span class="pl-s"><span class="pl-pds">'</span>dist<span class="pl-pds">'</span></span>));
-});</pre></div>
 		</article>
-		<a class="github-fork-ribbon" href="https://github.com/sindresorhus/github-markdown-css" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 	</body>
 </html>
