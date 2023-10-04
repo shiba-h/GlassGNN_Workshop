@@ -133,18 +133,6 @@ Some text to show that the reference links can follow later.
 [link text itself]: http://www.reddit.com
 </code></pre>
 
-<p><a name="user-content-links"></a><a href="https://www.google.com">I'm an inline-style link</a></p>
-
-<p><a href="https://www.google.com" title="Google's Homepage">I'm an inline-style link with title</a></p>
-
-<p><a href="https://www.mozilla.org">I'm a reference-style link</a></p>
-
-<p><a href="/tylerlong/github-markdown-css-demo/blob/blob/master/LICENSE">I'm a relative reference to a repository file</a></p>
-
-<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
-
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a></p>
-
 <p>Some text to show that the reference links can follow later.</p>
 
 <p><a name="user-content-images"></a></p><a name="user-content-images">
@@ -181,33 +169,7 @@ Reference-style:
 
 <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
 
-<p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.</p>
 
-<pre lang="no-highlight"><code>```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-```
-</code></pre>
-
-<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>JavaScript syntax highlighting<span class="pl-pds">"</span></span>;
-<span class="pl-c1">alert</span>(s);</pre></div>
-
-<div class="highlight highlight-source-python"><pre>s <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Python syntax highlighting<span class="pl-pds">"</span></span>
-<span class="pl-k">print</span> s</pre></div>
-
-<pre><code>No language indicated, so no syntax highlighting in Markdown Here (varies on Github).
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre>
 
 <p><a name="user-content-tables"></a></p><a name="user-content-tables">
 
@@ -240,18 +202,6 @@ Markdown | Less | Pretty
 <p><a name="user-content-tables"></a><a name="user-content-blockquotes"></a></p><a name="user-content-blockquotes">
 
 </a><h2><a name="user-content-blockquotes"></a><a id="user-content-blockquotes" class="anchor" href="#blockquotes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blockquotes</h2>
-
-
-
-<blockquote>
-<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-</blockquote>
-
-<p><a name="user-content-blockquotes"></a><a name="user-content-html"></a></p><a name="user-content-html">
-
-</a><h2><a name="user-content-html"></a><a id="user-content-inline-html-1" class="anchor" href="#inline-html-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inline HTML</h2>
-
-<p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.</p>
 
 
 
@@ -316,82 +266,8 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 
 
-<p>Or, in pure Markdown, but losing the image sizing and border:</p>
-
-<pre lang="no-highlight"><code>[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-</code></pre>
-
 <p>Referencing a bug by #bugID in your git commit links it to the slip. For example #1.</p>
 
-<h2><a id="user-content-task-list" class="anchor" href="#task-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task List</h2>
-
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"> foo
-
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"> foo</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="checked" disabled="disabled"> foo</li>
-</ul></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="checked" disabled="disabled"> foo</li>
-</ul>
-
-<p><a name="user-content-videos">[test]: </a><a href="http://google.com/">http://google.com/</a> "Google"</p>
-
-<h1><a id="user-content-a-heading" class="anchor" href="#a-heading" aria-hidden="true"><span class="octicon octicon-link"></span></a>A heading</h1>
-
-<p>Just a note, I've found that I can't test my markdown parser vs others.
-For example, both markdown.js and showdown code blocks in lists wrong. They're
-also completely [inconsistent][test] with regards to paragraphs in list items.</p>
-
-<p>A link. Not anymore.</p>
-
-<p></p>This will make me fail the test because
-markdown.js doesnt acknowledge arbitrary html blocks =/<p></p>
-
-<ul>
-<li><p>List Item 1</p></li>
-<li><p>List Item 2</p>
-
-<ul>
-<li>New List Item 1
-Hi, this is a list item.</li>
-<li>New List Item 2
-Another item
-    Code goes here.
-    Lots of it...</li>
-<li>New List Item 3
-The last item</li>
-</ul></li>
-<li><p>List Item 3
-The final item.</p></li>
-<li><p>List Item 4
-The real final item.</p></li>
-</ul>
-
-<p>Paragraph.</p>
-
-<blockquote>
-<ul>
-<li>bq Item 1</li>
-<li>bq Item 2
-
-<ul>
-<li>New bq Item 1</li>
-<li>New bq Item 2
-Text here</li>
-</ul></li>
-</ul>
-</blockquote>
-
-<hr>
-
-<blockquote>
-<p>Another blockquote!
-I really need to get
-more creative with
-mockup text..
-markdown.js breaks here again</p>
-</blockquote>
 
 <h2><a id="user-content-another-heading" class="anchor" href="#another-heading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Another Heading</h2>
 
@@ -401,28 +277,6 @@ And an image <a href="/tylerlong/github-markdown-css-demo/blob/master/src" targe
 <pre><code>Code goes here.
 Lots of it...
 </code></pre>
-
-<blockquote>
-<p>A list within a blockquote:</p>
-
-<ul>
-<li>asterisk 1</li>
-<li>asterisk 2</li>
-<li>asterisk 3</li>
-</ul>
-</blockquote>
-
-<p><strong><em>This is strong and em.</em></strong></p>
-
-<p>So is <strong><em>this</em></strong> word.</p>
-
-<p><strong><em>This is strong and em.</em></strong></p>
-
-<p>So is <strong><em>this</em></strong> word.</p>
-
-<h2><a id="user-content-unordered" class="anchor" href="#unordered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unordered</h2>
-
-
 
 
 <h1><a id="user-content-markdown-syntax" class="anchor" href="#markdown-syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markdown: Syntax</h1>
